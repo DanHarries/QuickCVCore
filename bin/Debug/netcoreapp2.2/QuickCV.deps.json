@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "a1134295d207d087eeb2338f5388e7be526f2a5b"
+    "signature": "fb1d04ffade62fec776fc8b801d4488855915eeb"
   },
   "compilationOptions": {
     "defines": [
@@ -29,13 +29,50 @@
           "Microsoft.EntityFrameworkCore.Design": "2.2.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "2.2.1",
           "Microsoft.NETCore.App": "2.2.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.0"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.0",
+          "PDF.Core": "4.6.1.2"
         },
         "runtime": {
           "QuickCV.dll": {}
         },
         "compile": {
           "QuickCV.dll": {}
+        }
+      },
+      "BitMiracle.LibTiff.NET/2.4.584.1": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.3/BitMiracle.LibTiff.NetStandard.dll": {
+            "assemblyVersion": "2.4.584.0",
+            "fileVersion": "2.4.584.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/BitMiracle.LibTiff.NetStandard.dll": {}
+        }
+      },
+      "HtmlAgilityPack.NetCore/1.5.0.1": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Xml.XPath": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/HtmlAgilityPack.NetCore.dll": {
+            "assemblyVersion": "1.5.0.1",
+            "fileVersion": "1.5.0.1"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/HtmlAgilityPack.NetCore.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
@@ -459,6 +496,25 @@
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {}
         }
       },
+      "Microsoft.Win32.SystemEvents/4.5.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.2.0"
@@ -476,6 +532,56 @@
         },
         "compile": {
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
+        }
+      },
+      "PDF.Core/4.6.1.2": {
+        "dependencies": {
+          "BitMiracle.LibTiff.NET": "2.4.584.1",
+          "HtmlAgilityPack.NetCore": "1.5.0.1",
+          "Microsoft.NETCore.App": "2.2.0",
+          "Microsoft.NETCore.Platforms": "2.2.0",
+          "PdfClown.NetStandard": "0.2.0-beta",
+          "PdfSharpCore": "1.0.4",
+          "System.Configuration.ConfigurationManager": "4.5.0",
+          "System.Drawing.Common": "4.5.1",
+          "ZKWeb.System.Drawing": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/IronPdf.Core.dll": {
+            "assemblyVersion": "4.6.1.2",
+            "fileVersion": "4.6.1.2"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/IronPdf.Core.dll": {}
+        }
+      },
+      "PdfClown.NetStandard/0.2.0-beta": {
+        "dependencies": {
+          "System.Drawing.Common": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/PdfClown.dll": {
+            "assemblyVersion": "0.2.0.0",
+            "fileVersion": "0.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/PdfClown.dll": {}
+        }
+      },
+      "PdfSharpCore/1.0.4": {
+        "dependencies": {
+          "Microsoft.NETCore.App": "2.2.0"
+        },
+        "runtime": {
+          "lib/netcoreapp1.1/PdfSharpCore.dll": {
+            "assemblyVersion": "1.0.4.0",
+            "fileVersion": "1.0.4.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp1.1/PdfSharpCore.dll": {}
         }
       },
       "Remotion.Linq/2.2.0": {
@@ -622,6 +728,37 @@
         }
       },
       "System.Collections.Immutable/1.5.0": {},
+      "System.ComponentModel/4.3.0": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.ComponentModel.Primitives/4.3.0": {
+        "dependencies": {
+          "System.ComponentModel": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.ComponentModel.TypeConverter/4.3.0": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Collections.NonGeneric": "4.3.0",
+          "System.Collections.Specialized": "4.3.0",
+          "System.ComponentModel": "4.3.0",
+          "System.ComponentModel.Primitives": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Reflection.Primitives": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Threading": "4.3.0"
+        }
+      },
       "System.Composition/1.0.31": {
         "dependencies": {
           "System.Composition.AttributedModel": "1.0.31",
@@ -745,6 +882,50 @@
           "lib/netstandard1.0/System.Composition.TypedParts.dll": {}
         }
       },
+      "System.Configuration.ConfigurationManager/4.5.0": {
+        "dependencies": {
+          "System.Security.Cryptography.ProtectedData": "4.5.0",
+          "System.Security.Permissions": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
+        }
+      },
+      "System.Drawing.Common/4.5.1": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.2.0",
+          "Microsoft.Win32.SystemEvents": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
+          },
+          "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
+          }
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Drawing.Common.dll": {}
+        }
+      },
       "System.Interactive.Async/3.2.0": {
         "runtime": {
           "lib/netstandard2.0/System.Interactive.Async.dll": {
@@ -780,6 +961,41 @@
           "System.Reflection.Extensions": "4.3.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/4.5.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
+      "ZKWeb.System.Drawing/4.0.1": {
+        "dependencies": {
+          "System.Collections.NonGeneric": "4.3.0",
+          "System.Collections.Specialized": "4.3.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Runtime.Serialization.Primitives": "4.3.0",
+          "System.Threading.Thread": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ZKWeb.System.Drawing.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/ZKWeb.System.Drawing.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3716,6 +3932,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "BitMiracle.LibTiff.NET/2.4.584.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+MokkvkYafuRwwsrOFaApdLK8a5kpmDVH95dkxtxVPDkQMEBkJ8GC+XCZ/wh0mJExljr35bArKPDO8FdTGRdSw==",
+      "path": "bitmiracle.libtiff.net/2.4.584.1",
+      "hashPath": "bitmiracle.libtiff.net.2.4.584.1.nupkg.sha512"
+    },
+    "HtmlAgilityPack.NetCore/1.5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WqEUmteaWvGMq0GEeWQoeDenJuqE+dIlQ1C/3RtlnmdszpoQb7GkRWceCoQyCqtrbaf7NWC5JJ2h0hSTG0CHrw==",
+      "path": "htmlagilitypack.netcore/1.5.0.1",
+      "hashPath": "htmlagilitypack.netcore.1.5.0.1.nupkg.sha512"
+    },
     "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
       "type": "package",
       "serviceable": true,
@@ -3884,6 +4114,13 @@
       "path": "microsoft.visualstudio.web.codegenerators.mvc/2.2.0",
       "hashPath": "microsoft.visualstudio.web.codegenerators.mvc.2.2.0.nupkg.sha512"
     },
+    "Microsoft.Win32.SystemEvents/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-K2TAr07pgl/m/J9ed3cmAzx0SD55kYuVfBG6SPRIH/ELTh/D2qGrjOWDQJo7r+LZl1nO2Nkl0UAQBUt6S2ewqQ==",
+      "path": "microsoft.win32.systemevents/4.5.0",
+      "hashPath": "microsoft.win32.systemevents.4.5.0.nupkg.sha512"
+    },
     "NETStandard.Library/2.0.3": {
       "type": "package",
       "serviceable": true,
@@ -3897,6 +4134,27 @@
       "sha512": "sha512-KuqDbPzjOWbUM6gPMbkvdhlQ10roQAoMM7mNZ8hcY/fH+9J4Zc+qT8dLWoNzGyr0OrxQVdZdbSjy/fxwoICgGg==",
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
+    },
+    "PDF.Core/4.6.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tbt5KsomeoRY8RmBt7ZJJ9bqrIU8aU9oIkiATnrEEP5y+0eMYMH9uq+LjNGxvu/4UrHI7R8kGwiCAFK5Qs0Lvw==",
+      "path": "pdf.core/4.6.1.2",
+      "hashPath": "pdf.core.4.6.1.2.nupkg.sha512"
+    },
+    "PdfClown.NetStandard/0.2.0-beta": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xbO9KhwJDdwqG0ZUEJt1sMOAvGnHbbVZvAvw5+9pDzicKn/ceJV+IJ4k6FGf9Kak93aITxg21dQpPz5u5t/NJQ==",
+      "path": "pdfclown.netstandard/0.2.0-beta",
+      "hashPath": "pdfclown.netstandard.0.2.0-beta.nupkg.sha512"
+    },
+    "PdfSharpCore/1.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yW6jny+zpGlb7k1JP6SC2vVdjRiSdqXqRTt1FDwGhPNxtKQVcPxY3ZMvoidMNVmXLriiDZPo1YAAvQYiIbKeHQ==",
+      "path": "pdfsharpcore/1.0.4",
+      "hashPath": "pdfsharpcore.1.0.4.nupkg.sha512"
     },
     "Remotion.Linq/2.2.0": {
       "type": "package",
@@ -3954,6 +4212,27 @@
       "path": "system.collections.immutable/1.5.0",
       "hashPath": "system.collections.immutable.1.5.0.nupkg.sha512"
     },
+    "System.ComponentModel/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
+      "path": "system.componentmodel/4.3.0",
+      "hashPath": "system.componentmodel.4.3.0.nupkg.sha512"
+    },
+    "System.ComponentModel.Primitives/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KMVuoQ+8bMQ/Z59M3s64num5AD74X5YSqVc7ibwGkPTfmmkl2W8VuSxLRJtpw4KzQrSKUgR0BLbF0adPfcTSGQ==",
+      "path": "system.componentmodel.primitives/4.3.0",
+      "hashPath": "system.componentmodel.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.ComponentModel.TypeConverter/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
+      "path": "system.componentmodel.typeconverter/4.3.0",
+      "hashPath": "system.componentmodel.typeconverter.4.3.0.nupkg.sha512"
+    },
     "System.Composition/1.0.31": {
       "type": "package",
       "serviceable": true,
@@ -3996,6 +4275,20 @@
       "path": "system.composition.typedparts/1.0.31",
       "hashPath": "system.composition.typedparts.1.0.31.nupkg.sha512"
     },
+    "System.Configuration.ConfigurationManager/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+2SYYKwbN0n+9SrBanflZdaVleFkytEfTNzOu+f3SK0vROMMrorpw1UJyHJQ1ZooughRxPmLj8Fh5N2tSe7sdA==",
+      "path": "system.configuration.configurationmanager/4.5.0",
+      "hashPath": "system.configuration.configurationmanager.4.5.0.nupkg.sha512"
+    },
+    "System.Drawing.Common/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m3c7Fe/CS/jZ/nLBrxCCh52dYiC33GPbGfcF4CiVukb8+p121XUTHxs6sYKbWfvDVD8JssHcM+HVFLtzl3X3Xw==",
+      "path": "system.drawing.common/4.5.1",
+      "hashPath": "system.drawing.common.4.5.1.nupkg.sha512"
+    },
     "System.Interactive.Async/3.2.0": {
       "type": "package",
       "serviceable": true,
@@ -4016,6 +4309,20 @@
       "sha512": "sha512-Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
       "path": "system.linq.queryable/4.0.1",
       "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s/MFK8BvgtejZj5a8qAPDXEGBtWkpFX98qwQP/wqVa9CgIC7LrKHxDFdlN5x6afGAb0ZVBVGIZlCdBLnO2QjZw==",
+      "path": "system.security.cryptography.protecteddata/4.5.0",
+      "hashPath": "system.security.cryptography.protecteddata.4.5.0.nupkg.sha512"
+    },
+    "ZKWeb.System.Drawing/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-psyHM3aKiT2z9iaTGSeldZnt0KOsFSBz9JB8jrLpmYSyGCx3Sp2VD9rclfcZCyFhP70dwmT2KEjCCb6DiKhOZA==",
+      "path": "zkweb.system.drawing/4.0.1",
+      "hashPath": "zkweb.system.drawing.4.0.1.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",
